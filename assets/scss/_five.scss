@@ -1,0 +1,100 @@
+.five{
+    background-color: #F7F2E4;
+    .contain{
+        padding: 60px 0;
+        text-align: center;
+        &__button{
+            border: none;
+            background-color: white;
+            border-radius: 18px;
+            padding: 5px 12px;
+            font-size: 14px;
+            color: #7352ff;
+        }
+        &__p{
+            font-size: 14px;
+            color: #7352ff;
+            margin-bottom: 0;
+        }
+        &__h3{
+            font-weight: 600;
+            font-size: 32px;
+            margin-top: 10px;
+        }
+        &__ul{
+            display: flex;
+            width: fit-content;
+            gap: 14px;
+            padding-left: 0;
+            margin: 0 auto;
+            del{
+                color: #F6C627;
+            }
+        }
+        &__table{
+            background-color: white;
+            width: 600px;
+            font-size: 14px;
+            border-radius: 14px;
+            margin: 40px auto;
+            text-align: start;
+            .grey{
+                color: grey;
+            }
+            tr{
+                border-bottom: 1px solid #e5e5e5;
+            }
+            img{
+                width: 30px;
+                margin: 5px 10px;
+            }
+        }
+        &__bottom{
+            display: flex;
+            width: 600px;
+            margin: 20px auto;
+            text-align: start;
+            padding: 20px;
+            border-radius: 14px;
+            border: 1px solid #babec3;
+            .left{
+                padding: 0 30px;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+@media(max-width:750px){
+    .five{
+        .contain{
+            &__table{
+                width: 100%;
+            }
+            &__bottom{
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .five{
+        .contain{
+            &__table{
+                font-size: 12px;
+            }
+            &__bottom{
+                flex-wrap: wrap;
+                .left{
+                    padding: 10px 0;
+                    width: 100%;
+                }
+                .right{
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

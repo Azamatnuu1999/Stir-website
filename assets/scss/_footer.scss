@@ -1,0 +1,51 @@
+footer{
+    background-color: #7352FF;
+    .contain{
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        &__form{
+            width: 50%;
+            color: white;
+            h3{
+                font-weight: 500;
+                font-size: 24px;
+                color: white;
+            }
+            button{
+                border: 1px solid white;
+                border-radius: 14px;
+                padding: 4px 10px;
+                font-size: 14px;
+                color: white;
+                display: flex;
+                justify-content: space-between;
+                width: 240px;
+                background-color: inherit;
+            }
+        }
+        &__bottom{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            color: white;
+            margin: 60px auto 30px;
+            font-size: 12px;
+            i{
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+@media(max-width:400px){
+    footer{
+        .contain{
+            &__form{
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+    }
+}

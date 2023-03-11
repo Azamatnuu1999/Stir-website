@@ -1,0 +1,35 @@
+.second{
+    background-image: url(../media/imagee.png),url(../media/imagee.png);
+    background-repeat: no-repeat;
+    background-position: bottom left, bottom right;
+    .contain{
+        background-color: #7352ff;
+        padding: 5px;
+        margin-top: 50px;
+        border-radius: 10px;
+        &__ul{
+            display: flex;
+            width: max-content;
+            margin: 10px auto;
+            gap: 10px;
+            padding-left: 0;
+            text-align: center;
+            color: white;
+            font-size: 13px;
+            img{
+                margin-right: 3px;
+            }
+            li:hover{
+                color: antiquewhite;
+                cursor: pointer;
+            }
+        }
+        &__bottom{
+            border-radius: 10px;
+            img{
+                cursor: pointer;
+                overflow: hidden;
+            }
+        }
+    } 
+}

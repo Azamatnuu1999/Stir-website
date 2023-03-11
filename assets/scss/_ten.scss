@@ -1,0 +1,41 @@
+.ten{
+    background-color: #191919;
+    background-image: url(../media/Frame\ \(19\).png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 50%;
+    .contain{
+        padding: 80px 0;
+        .text{
+            width: 49%;
+            margin-left: auto;
+            &__p{
+                color: #FF573D;
+                font-size: 13px;
+            }
+            &__h3{
+                color: white;
+                font-weight: 600;
+            }
+            &__ul{
+                li{
+                    list-style-image: url(../media/Vector\ \(1\).png);
+                    margin-bottom: 10px;
+                    color: white;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:450px){
+    .ten{
+        background-image: linear-gradient(to right, #191919b1, #1919193b), url(../media/Frame\ \(19\).png);
+        .contain{
+            .text{
+                width: 100%;
+            }
+        }
+    }
+}

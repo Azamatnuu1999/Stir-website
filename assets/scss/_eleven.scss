@@ -1,0 +1,66 @@
+.eleven{
+    .contain{
+        padding: 50px 0;
+        &__p{
+            color: #7352FF;
+            font-weight: 500;
+            font-size: 14px;
+            text-align: center;
+        }
+        &__h3{
+            font-weight: 600;
+            text-align: center;
+            width: 80%;
+            margin: 30px auto;
+            font-size: 24px;
+        }
+        &__bottom{
+            display: flex;
+            justify-content: space-between;
+            .card1{
+                width: 24%;
+                box-shadow: 0 0 6px grey;
+                text-align: center;
+                padding: 20px 10px;
+                cursor: pointer;
+                border-radius: 12px;
+                img{
+                    width: 30px;
+                }
+                h5{
+                    font-weight: 600;
+                    margin: 4px auto;
+                }
+                p{
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:800px){
+    .eleven{
+        .contain{
+            &__bottom{
+                flex-wrap: wrap;
+                .card1{
+                    width: 48%;
+                    margin: 10px auto;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:350px){
+    .eleven{
+        .contain{
+            &__bottom{
+                .card1{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

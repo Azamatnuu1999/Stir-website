@@ -1,0 +1,93 @@
+.twelwe{
+    background-color: #191919;
+    .contain{
+        padding: 50px 0;
+        .text{
+            width: 50%;
+            margin-right: auto;
+            &__button{
+                border: 1px solid #6EE4B5;
+                border-radius: 14px;
+                background-color: inherit;
+                padding: 4px 6px;
+                color: white;
+                font-size: 13px;
+            }
+            &__h3{
+                color: white;
+                font-weight: 600;
+                font-size: 24px;
+                margin: 4px 0;
+            }
+            &__p{
+                font-size: 13px;
+                color: white;
+            }
+            &__input{
+                margin: 0;
+                background-color: inherit;
+                color: white;
+                border-radius: 14px;
+                outline: none;
+                padding: 3px 5px;
+                border: 1px solid grey;
+            }
+        }
+        &__bottom{
+            display: flex;
+            margin: 50px 0;
+            justify-content: space-between;
+            .card1{
+                width: 32%;
+                position: relative;
+                &__h3{
+                    color: white;
+                    font-size: 32px;
+                    margin-top: 0;
+                    text-align: center;
+                    top: 5%;
+                    line-height: 250px;
+                    width: 90%;
+                    left: 5%;
+                    height: 90%;
+                    position: absolute;
+                    border: 1px solid white;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:800px){
+    .twelwe{
+        .contain{
+            .text{
+                width: 100%;
+            }
+            &__bottom{
+                .card1{
+                    &__h3{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:600px){
+    .twelwe{
+        .contain{
+            &__bottom{
+                flex-wrap: wrap;
+                .card1{
+                    margin: 10px auto;
+                    img{
+                        width: 100%;
+                    }
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

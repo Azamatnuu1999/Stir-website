@@ -1,0 +1,17 @@
+.fourth{
+    .contain{
+        padding: 100px 0;
+        text-align: center;
+        &__h3{
+            font-weight: 700;
+            margin-top: 0;
+        }
+        &__p{
+            font-size: 14px;
+            color: #FF573D;
+            span{
+                border-bottom: 1px solid #FF573D;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.eight{
+    background-color: #2b2a33;
+    .contain{
+        padding: 50px 0 0;
+        text-align: center;
+        &__button{
+            border: none;
+            background-color: #6ee4b5;
+            border-radius: 18px;
+            padding: 5px 12px;
+            font-size: 14px;
+            color: white;
+        }
+        &__p{
+            font-size: 14px;
+            color: #6EE4B5;
+            margin-bottom: 0;
+        }
+        &__h3{
+            font-weight: 600;
+            font-size: 32px;
+            color: white;
+            margin-top: 10px;
+            padding-bottom: 0;
+        }
+        &__bottom{
+            margin-top: -40px;
+        }
+    }
+}

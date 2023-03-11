@@ -1,0 +1,106 @@
+.nine{
+    .contain{
+        padding: 40px 0;
+        &__h3{
+            text-align: center;
+            font-weight: 600;
+            font-size: 24px;
+            margin: 40px auto;
+            width: 80%;
+        }
+        &__slider{
+            ul{
+                li{
+                    width: 80%;
+                    margin: 10px 0;
+                    display: flex;
+                    padding: 0 10px;
+                    justify-content: space-between;
+                    .left{
+                        width: 40%;
+                        img{
+                            width: 90%;
+                            margin: 20px auto;
+                        }
+                    }
+                    .right{
+                        width: 60%;
+                        padding: 10px 14px;
+                        &__button{
+                            border-radius: 14px;
+                            padding: 2px 8px;
+                            font-size: 12px;
+                            background-color: inherit;
+                            border: 1px solid #6ee45b;
+                        }
+                        &__p{
+                            font-weight: 600;
+                        }
+                        &__ul{
+                            padding-left: 0;
+                            li{
+                                background-color: inherit;
+                                display: flex;
+                                padding-bottom: 6px;
+                                border-bottom: 1px solid white;
+                                span{
+                                    width: 50%;
+                                    font-size: 13px;
+                                    img{
+                                        margin-right: 5px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                li:nth-child(odd){
+                    background-color: #f7f2e4;
+                }
+                li:nth-child(even){
+                    background-color: #f6c655;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .nine{
+        .contain{
+            &__slider{
+                ul{
+                    padding-left: 0;
+                    li{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:650px){
+    .nine{
+        .contain{
+            &__h3{
+                width: 100%;
+            }
+            &__slider{
+                ul{
+                    li{
+                        display: flex;
+                        flex-wrap: wrap;
+                        text-align: center;
+                        .left{
+                            width: 100%;
+                        }
+                        .right{
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
